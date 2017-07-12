@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_intro"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.example.hojan.flytofit.Intro">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical|center_horizontal">
+
+        <ImageView
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:src="@drawable/logo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fit your life"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
