@@ -24,7 +24,7 @@ public class RegsiterRequest extends StringRequest {
     }
 
     @Override
-    public Map<String, String> getParameters() {
+    public Map<String, String> getParams() {
         return parameters;
     }
 
