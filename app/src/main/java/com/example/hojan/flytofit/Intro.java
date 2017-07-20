@@ -19,5 +19,5 @@ public class Intro extends AppCompatActivity {
                 startActivity(postIntent);
                 finish();
             }
-        }, 3000);
+        }, 7000);
 }}
