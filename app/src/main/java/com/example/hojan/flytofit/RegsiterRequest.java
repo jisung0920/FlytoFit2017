@@ -12,17 +12,20 @@ import java.util.Map;
 
 public class RegsiterRequest extends StringRequest {
 
-    final static private  String URL = "http://jisung0920.cafe24.com/Regsiter.php";
+    final static private String URL = "http://jisung0920.cafe24.com/Regsiter.php";
     private Map<String, String> parameters;
- RegsiterRequest(String userID,String userPassword,String userName,Response.Listener<String> listener) {
-     super(Method.POST,URL,listener,null);
-     parameters = new HashMap<>();
-     parameters.put("userID", userID);
-     parameters.put("userPassword", userPassword);
-     parameters.put("userName", userName);
- }
+
+    public RegsiterRequest(String userID, String userPassword, String userName, Response.Listener<String> listener) {
+        super(Method.POST, URL, listener, null);
+        parameters = new HashMap<>();
+        parameters.put("userID", userID);
+        parameters.put("userPassword", userPassword);
+        parameters.put("userName", userName);
+    }
+
     @Override
-    public  Map<String, String> getParameters() {
+    public Map<String, String> getParameters() {
         return parameters;
     }
+
 }
